@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yönlendiriliyor...</title>
+  <script>
+    window.onload = function() {
+      var newWindow = window.open('https://www.google.com', '_blank');
+
+      setTimeout(function() {
+        if (newWindow && !newWindow.closed) {
+          newWindow.close();
+        }
+      }, 500); 
+    };
+  </script>
+</head>
+<body>
+  <p>İşlem gerçekleştiriliyor...</p>
+</body>
+</html>
